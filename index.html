@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embed Media</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+        .container{
+            max-width: 70%;
+            padding: 25px;
+            background: pink;
+            border: 1px solid white;
+            margin: 0 auto;
+            text-align: center;
+        }
+        pre {
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+            width: fit-content;
+            padding: 0px 50px 0px 0px;
+        }
+        hr {
+            border-color: aqua;
+            border-style: dashed;
+        }
+ 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Media Page</h1>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <h2>Audio</h2>
+        <p>The Beatles - Back In The U.S.S.R (Dsher Demos)</p>
+        <audio controls>
+            <source src="backInTheUSSR.flac" type="audio/flac">
+            Your browser does not support the audio element.
+        </audio>
+ 
+        <br><br>
+        <hr>
+        <br><br>
+
+
+        <h2>Video (With Controls)</h2>
+        <p>The Beatles - Yellow Submarine</p>
+        <video controls width=50%>
+            <source src="yellowSubmarine.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+ 
+ 
+<br><br>
+<hr>
+<br><br>
+<h2>Code</h2>
+<p>"pre" tag will format the code correctly</p>
+<pre>
+    <code>
+          function playPause() {
+                if (myVideo.paused)
+                    myVideo.play();
+                else
+                    myVideo.pause();
+          }
+    </code>
+</pre>
+ 
+ 
+<br><br>
+<hr>
+<br><br>
+ 
+ 
+<h2>iFrame</h2>
+<p>Embed anything with an iFrame (Youtube, maps, websites etc.)</p>
+<iframe id="inlineFrameExample" title="Inline Frame Example"
+  width="50%"
+  height="700vh"
+  src="https://en.wikipedia.org/wiki/The_Beatles">
+</iframe>
+ 
+<br><br>
+<hr>
+<br><br>
+ 
+<H2>YouTube Videos</H2>
+<p>The Beatles - I Am The Walrus (Official Video)</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TKuvJLTeJYY?si=YN1NoJRvC8b43Aqx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ 
+<br><br>
+<hr>
+<br><br>
+ 
+<h2>Google Maps</h2>
+<p>Abbey Rd., Liverpool, UK.</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2377.2487587287983!2d-2.951952053576392!3d53.42826032250435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b2177971056f1%3A0xae33c1be83e8d1fc!2sAbbey%20Rd%2C%20Anfield%2C%20Liverpool%2C%20UK!5e0!3m2!1sen!2sca!4v1699987608218!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+ 
+<br><br>
+<hr>
+ 
+ 
+ 
+<!--
+<style>
+    * {
+      box-sizing: border-box;
+    }
+   
+    body {
+      margin: 0;
+      font-family: Arial;
+      font-size: 17px;
+    }
+   
+    #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+   
+    .content {
+      position: fixed;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+      width: 100%;
+      padding: 20px;
+    }
+   
+    #myBtn {
+      width: 200px;
+      font-size: 18px;
+      padding: 10px;
+      border: none;
+      background: #000;
+      color: #fff;
+      cursor: pointer;
+    }
+   
+    #myBtn:hover {
+      background: #ddd;
+      color: black;
+    }
+    </style>
+    </head>
+    <body>
+   
+    <iframe id="myVideo" src="https://www.youtube.com/embed/y6120QOlsfU?si=wiJV7YdqMyoYe6E4&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   
+    <div class="content">
+      <h1>Heading</h1>
+      <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
+      <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div>
+   
+    <script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+   
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+    </script>
+    -->
+ 
+    </div>
+</body>
+</html>
